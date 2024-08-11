@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.carousel img {
+    min-width: 100%;
+    transition: transform 1s ease;
+}
+.carousel img:not(:first-child) {
+    display: none;
+}
+.form-container, .attendance-result {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+.form-container.active, .attendance-result.active {
+    display: block;
+}
